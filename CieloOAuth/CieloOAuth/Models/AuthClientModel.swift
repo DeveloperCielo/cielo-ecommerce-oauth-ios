@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AuthClientModel: Decodable {
+@objc class AuthClientModel: NSObject, Decodable {
     var accessToken: String
     var tokenType: String
     var expiresIn: String

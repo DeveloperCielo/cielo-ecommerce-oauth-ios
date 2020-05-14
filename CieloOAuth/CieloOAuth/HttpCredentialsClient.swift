@@ -15,7 +15,7 @@ public protocol CredentialsClient {
     func getOAuthCredentials(completion: @escaping (AccessToken?, String?) -> Void)
 }
 
-public class HttpCredentialsClient: CredentialsClient {
+@objc public class HttpCredentialsClient: NSObject, CredentialsClient {
     public var environment: Environment
     public var clientId: String
     public var clientSecret: String

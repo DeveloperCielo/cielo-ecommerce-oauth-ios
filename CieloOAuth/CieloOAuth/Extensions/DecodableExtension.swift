@@ -11,7 +11,7 @@ extension JSONDecoder.KeyDecodingStrategy {
     static var convertFromUpperCamelCase: JSONDecoder.KeyDecodingStrategy {
         return .custom { codingKeys in
             
-            var key = AnyCodingKey(codingKeys.last!)
+            let key = AnyCodingKey(codingKeys.last!)
             
             // lowercase first letter
             if let firstChar = key.stringValue.first {
@@ -26,20 +26,20 @@ extension JSONDecoder.KeyDecodingStrategy {
 }
 
 // wrapper to allow us to substitute our mapped string keys.
-struct AnyCodingKey: CodingKey {
+@objc class AnyCodingKey: NSObject, CodingKey {
     
     var stringValue: String
     var intValue: Int?
     
-    init(_ base: CodingKey) {
+    convenience init(_ base: CodingKey) {
         self.init(stringValue: base.stringValue, intValue: base.intValue)
     }
     
-    init(stringValue: String) {
+    required init(stringValue: String) {
         self.stringValue = stringValue
     }
     
-    init(intValue: Int) {
+    required init(intValue: Int) {
         self.stringValue = "\(intValue)"
         self.intValue = intValue
     }

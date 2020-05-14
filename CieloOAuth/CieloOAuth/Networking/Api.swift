@@ -14,7 +14,7 @@ protocol ApiProtocol {
                                completion: @escaping (T?, String?) -> Void)
 }
 
-class Api: ApiProtocol {
+@objc class Api: NSObject, ApiProtocol {
     
     static var shared: Api = {
        return Api()

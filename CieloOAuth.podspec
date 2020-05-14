@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "CieloOAuth"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "Biblioteca para facilitar a integração da autenticação com a Cielo"
 
   spec.description  = <<-DESC
@@ -22,11 +22,12 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "https://github.com/DeveloperCielo/cielo-ecommerce-oauth-ios.git", :tag => "v1.0.5" }
+  spec.source       = { :git => "https://github.com/DeveloperCielo/cielo-ecommerce-oauth-ios.git", :tag => "v#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "*.*"
-  spec.public_header_files = "Example/*.*"
+  # spec.source_files  = "*.*"
+  spec.source_files  = "CieloOAuth/CieloOAuth/**/*.{h,m,swift,framework}"
+  spec.public_header_files = "CieloOAuth/ExampleOAuth/*.*"
 
 end
