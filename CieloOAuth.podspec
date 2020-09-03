@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "CieloOAuth"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "Biblioteca para facilitar a integração da autenticação com a Cielo"
 
   spec.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://twitter.com/jefnazario"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.platform     = :ios
+  spec.platform     = :ios, "9.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.source       = { :git => "https://github.com/DeveloperCielo/cielo-ecommerce-oauth-ios.git", :tag => "v#{spec.version}" }
