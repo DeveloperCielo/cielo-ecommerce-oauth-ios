@@ -548,7 +548,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 108;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JL34Y44PJ2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -562,7 +562,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jnazario.CieloOAuth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -579,7 +579,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 107;
+				CURRENT_PROJECT_VERSION = 108;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JL34Y44PJ2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -593,7 +593,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jnazario.CieloOAuth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "CieloOAuth"
-  spec.version      = "1.0.7"
+  spec.version      = "1.0.8"
   spec.summary      = "Biblioteca para facilitar a integração da autenticação com a Cielo"
 
   spec.description  = <<-DESC

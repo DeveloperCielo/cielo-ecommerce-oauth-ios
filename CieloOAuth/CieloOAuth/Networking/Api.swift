@@ -31,7 +31,7 @@ protocol ApiProtocol {
         var urlRequest: URLRequest?
             urlRequest = URLRequest(url: URL(string: url)!)
         
-        let sdkName = "CieloOAuth"
+        let sdkName = "CieloOAuth-iOS"
         guard let bundle = Bundle(identifier: "com.jnazario.CieloOAuth") else {
             completion(nil, "Não foi possível obter o número da versão para registro no servidor.")
             return
